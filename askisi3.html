@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="students=[
+{name:'Spiros',lastname:'Muzakitis', mark:'8'},
+{name:'Persa',lastname:'Bakara', mark:'7'},
+{name:'Rania',lastname:'Sagri', mark:'9'},
+{name:'Spiros',lastname:'Tsepeli', mark:'6'},
+{name:'Mihalis',lastname:'Vlahos', mark:'8'}]",
+
+<p><h2> Simple student-list with ng-repeat: </h2></p>
+<ul>
+  <li ng-repeat="x in students">
+  {{ x.name + " " + x.lastname + " " + x.mark }}</li>
+</ul>
+
+</div>
+
+</body>
+</html>

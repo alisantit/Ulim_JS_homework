@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="numbers=['1','2','3','4','5','6','7','8','9','10']">
+  <h2> Simple calculator with ng-repeat: </h2>
+  If umber a is: <input type="number" ng-model="a" placeholder="input number a">
+  <ul>
+    <p ng-repeat="x in numbers">
+    <b> Result: </b> {{ x + " * " + a + " = " + a*x}}
+    </p>
+  </ul>
+</div>
+
+</body>
